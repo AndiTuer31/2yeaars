@@ -1,7 +1,7 @@
 // 3D Polaroid — flips on double-click to reveal a handwritten note on the back.
 // Drop-in replacement for window.SB.Polaroid usage.
 
-function PolaroidFlip({ id, rotate = 0, top, left, label, tapes = [], delay = 0, width = 220, note }) {
+function PolaroidFlip({ id, rotate = 0, top, left, label, tapes = [], delay = 0, width = 220, note, src = '' }) {
   const [flipped, setFlipped] = React.useState(false);
   const [hover, setHover] = React.useState(false);
   const photoSize = width - 28;
@@ -50,6 +50,7 @@ function PolaroidFlip({ id, rotate = 0, top, left, label, tapes = [], delay = 0,
             id={id}
             shape="rect"
             placeholder="drop a photo"
+            src={src || undefined}
             style={{ width: `${photoSize}px`, height: `${photoSize}px`, display: 'block', background: '#e9dec3' }}
           ></image-slot>
           <div style={{
