@@ -30,7 +30,7 @@ function Tape({ style, color = 'rgba(244,222,160,.6)' }) {
   );
 }
 
-function Polaroid({ id, rotate = 0, top, left, label, tapes = [], delay = 0, width = 220 }) {
+function Polaroid({ id, rotate = 0, top, left, label, tapes = [], delay = 0, width = 220, src = '' }) {
   const [hover, setHover] = React.useState(false);
   const photoSize = width - 28;
   return (
@@ -54,6 +54,7 @@ function Polaroid({ id, rotate = 0, top, left, label, tapes = [], delay = 0, wid
         id={id}
         shape="rect"
         placeholder="drop a photo"
+        src={src || undefined}
         style={{ width: `${photoSize}px`, height: `${photoSize}px`, display: 'block', background: '#e9dec3' }}
       ></image-slot>
       <div style={{
