@@ -101,65 +101,17 @@ function KiraSection() {
               <div style={{ marginTop: 10, height: 2, background: 'rgba(255,255,255,.35)', borderRadius: 2, overflow: 'hidden' }}>
                 <div style={{ width: '60%', height: '100%', background: '#fff' }}/>
               </div>
-              {/* image area — Kira's legendary bad selfie */}
+              {/* image area — Kira's legendary bad selfie photo */}
               <div style={{
                 marginTop: 12, height: 200, borderRadius: 10,
-                background: 'rgba(255,255,255,.18)',
-                display: 'flex', alignItems: 'center', justifyContent: 'center',
+                background: 'rgba(0,0,0,.15)',
                 overflow: 'hidden', position: 'relative',
               }}>
-                {/* flash blown-out overlay */}
-                <div style={{
-                  position: 'absolute', top: 0, right: 0,
-                  width: 60, height: 60,
-                  background: 'radial-gradient(circle at 80% 20%, rgba(255,255,255,.95) 0%, transparent 70%)',
-                  pointerEvents: 'none',
-                }} />
-                <svg viewBox="0 0 160 190" width="120" height="143">
-                  {/* neck */}
-                  <rect x="68" y="118" width="24" height="28" fill="#f4c08a" />
-                  {/* shirt corner (bad angle — cropped) */}
-                  <path d="M 50 155 Q 80 142 110 155 L 118 190 L 42 190 Z" fill="#c75e4e" />
-                  {/* head — tilted slightly */}
-                  <ellipse cx="82" cy="82" rx="48" ry="52" fill="#f4c08a" transform="rotate(-6 82 82)" />
-                  {/* hair — messy */}
-                  <path d="M 36 72 Q 40 20 82 18 Q 124 16 128 72 Q 118 38 82 38 Q 46 38 36 72 Z" fill="#3a2010" />
-                  <path d="M 36 72 Q 30 55 38 42 Q 44 32 50 38" stroke="#3a2010" strokeWidth="6" fill="none" strokeLinecap="round" />
-                  <path d="M 128 72 Q 134 55 126 40" stroke="#3a2010" strokeWidth="5" fill="none" strokeLinecap="round" />
-                  {/* eyes — one squinting from flash */}
-                  <ellipse cx="66" cy="80" rx="8" ry="9" fill="#fff" />
-                  <ellipse cx="66" cy="81" rx="4.5" ry="5" fill="#3a2010" />
-                  {/* squinting eye (flash) */}
-                  <path d="M 94 80 Q 100 76 106 80" stroke="#3a2010" strokeWidth="2.5" fill="none" strokeLinecap="round" />
-                  <path d="M 93 83 Q 100 86 107 83" stroke="#3a2010" strokeWidth="1.5" fill="none" strokeLinecap="round" />
-                  {/* eyebrows */}
-                  <path d="M 58 68 Q 66 64 74 67" stroke="#3a2010" strokeWidth="3" fill="none" strokeLinecap="round" />
-                  <path d="M 92 67 Q 100 63 108 66" stroke="#3a2010" strokeWidth="3" fill="none" strokeLinecap="round" />
-                  {/* nose */}
-                  <path d="M 80 88 Q 76 100 80 104 Q 84 104 88 104" stroke="#c8956a" strokeWidth="2" fill="none" strokeLinecap="round" />
-                  {/* open mouth smile — mid-word selfie */}
-                  <path d="M 66 114 Q 82 126 98 114" stroke="#3a2010" strokeWidth="2.5" fill="none" strokeLinecap="round" />
-                  <ellipse cx="82" cy="118" rx="10" ry="7" fill="#c0504a" />
-                  <rect x="74" y="113" width="16" height="5" fill="#fdfaf2" rx="2" />
-                  {/* ear */}
-                  <ellipse cx="34" cy="85" rx="8" ry="11" fill="#f4c08a" transform="rotate(-6 34 85)" />
-                  <ellipse cx="130" cy="85" rx="8" ry="11" fill="#f4c08a" transform="rotate(6 130 85)" />
-                  {/* double chin / bad angle line */}
-                  <path d="M 52 128 Q 82 136 112 128" stroke="#e0a878" strokeWidth="1.5" fill="none" opacity=".6" />
-                  {/* arm holding phone up — visible from crop */}
-                  <path d="M 122 160 Q 140 140 148 110 L 155 108 Q 150 138 134 165 Z" fill="#f4c08a" />
-                  <rect x="148" y="95" width="18" height="28" rx="4" fill="#2a1e10" />
-                  <rect x="150" y="97" width="14" height="20" rx="2" fill="#3a6a9a" opacity=".7" />
-                </svg>
-                {/* caption bubble */}
-                <div style={{
-                  position: 'absolute', bottom: 8, left: 8, right: 8,
-                  background: 'rgba(0,0,0,.38)', borderRadius: 6,
-                  fontFamily: '"Caveat", cursive', fontSize: 13, textAlign: 'center',
-                  padding: '3px 6px', lineHeight: 1.2,
-                }}>
-                  📸 selfie attempt #7
-                </div>
+                <img
+                  src="the%20insta%20story.jpeg"
+                  alt="Kira's story"
+                  style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+                />
               </div>
             </div>
           </Rv2>
@@ -235,6 +187,7 @@ function FourthSection() {
                 id="picture-four"
                 shape="rect"
                 placeholder="picture #4"
+                src="still%20the%20best.jpeg"
                 style={{ width: '340px', height: '340px', display: 'block', background: '#e9dec3' }}
               ></image-slot>
               <div style={{
@@ -598,6 +551,7 @@ function FinalSection() {
                   id="hidden-polaroid"
                   shape="rect"
                   placeholder="one for the end"
+                  src="year%20three.jpeg"
                   style={{ width: '228px', height: '228px', display: 'block', background: '#e9dec3' }}
                 ></image-slot>
                 <div style={{
