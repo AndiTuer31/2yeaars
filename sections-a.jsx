@@ -297,6 +297,7 @@ function NightSection() {
               id="scrap-couch"
               rotate={4}
               top={20} left={'34%'}
+              src="the%20couch.jpeg"
               label="the couch ♡"
               width={280}
               tapes={[
@@ -393,6 +394,7 @@ function BaileySection() {
               id="scrap-bailey-1"
               rotate={6}
               top={20} left={'48%'}
+              src="bailey%20photobomb.jpeg"
               label="bailey, photobomb"
               tapes={[{ style: { top: -10, left: 80, transform: 'rotate(8deg)' }, color: 'rgba(245,210,180,.7)' }]}
             />
@@ -440,28 +442,28 @@ function WallSection() {
 
         <div style={{ position: 'relative', marginTop: 70, height: 660 }}>
           <Reveal dir="up" delay={0.1}>
-            <SBPolaroid id="wall-1" rotate={-5} top={0}   left={60}   label="us, last summer" tapes={[{ style: { top: -8, left: 90, transform: 'rotate(-6deg)' } }]} />
+            <SBPolaroid id="wall-1" rotate={-5} top={0}   left={60}   src="us%20last%20summer.jpeg" label="us, last summer" tapes={[{ style: { top: -8, left: 90, transform: 'rotate(-6deg)' } }]} />
           </Reveal>
           <Reveal dir="up" delay={0.2}>
-            <SBPolaroid id="wall-2" rotate={3}  top={30}  left={330}  label="walking Bailey" tapes={[{ style: { top: -8, left: 80, transform: 'rotate(8deg)' }, color: 'rgba(245,210,180,.7)' }]} />
+            <SBPolaroid id="wall-2" rotate={3}  top={30}  left={330}  src="walking%20Bailey.jpeg" label="walking Bailey" tapes={[{ style: { top: -8, left: 80, transform: 'rotate(8deg)' }, color: 'rgba(245,210,180,.7)' }]} />
           </Reveal>
           <Reveal dir="up" delay={0.3}>
-            <SBPolaroid id="wall-3" rotate={-3} top={0}   left={600}  label="Bailey with Mozart's brother" tapes={[{ style: { top: -10, left: 100, transform: 'rotate(-3deg)' } }]} />
+            <SBPolaroid id="wall-3" rotate={-3} top={0}   left={600}  src="Bailey%20with%20Mozart's%20Brother.jpeg" label="Bailey with Mozart's brother" tapes={[{ style: { top: -10, left: 100, transform: 'rotate(-3deg)' } }]} />
           </Reveal>
           <Reveal dir="up" delay={0.4}>
-            <SBPolaroid id="wall-4" rotate={5}  top={20}  left={880}  label="the beach" tapes={[{ style: { top: -10, left: 70, transform: 'rotate(6deg)' }, color: 'rgba(199,94,78,.4)' }]} />
+            <SBPolaroid id="wall-4" rotate={5}  top={20}  left={880}  src="the%20beach.jpeg" label="the beach" tapes={[{ style: { top: -10, left: 70, transform: 'rotate(6deg)' }, color: 'rgba(199,94,78,.4)' }]} />
           </Reveal>
           <Reveal dir="up" delay={0.5}>
-            <SBPolaroid id="wall-5" rotate={4}  top={340} left={110}  label="flowers, on no occasion" tapes={[{ style: { top: -9, left: 90, transform: 'rotate(4deg)' } }]} />
+            <SBPolaroid id="wall-5" rotate={4}  top={340} left={110}  src="flower.jpeg" label="flowers, on no occasion" tapes={[{ style: { top: -9, left: 90, transform: 'rotate(4deg)' } }]} />
           </Reveal>
           <Reveal dir="up" delay={0.6}>
-            <SBPolaroid id="wall-6" rotate={-4} top={330} left={400}  label="the long evening" tapes={[{ style: { top: -10, left: 90, transform: 'rotate(-3deg)' }, color: 'rgba(245,210,180,.7)' }]} />
+            <SBPolaroid id="wall-6" rotate={-4} top={330} left={400}  src="the%20long%20evening.jpeg" label="the long evening" tapes={[{ style: { top: -10, left: 90, transform: 'rotate(-3deg)' }, color: 'rgba(245,210,180,.7)' }]} />
           </Reveal>
           <Reveal dir="up" delay={0.7}>
-            <SBPolaroid id="wall-7" rotate={3}  top={350} left={690}  label="a Döner"  tapes={[{ style: { top: -10, left: 80, transform: 'rotate(4deg)' } }]} />
+            <SBPolaroid id="wall-7" rotate={3}  top={350} left={690}  src="the%20d%C3%B6ner.jpeg" label="a Döner"  tapes={[{ style: { top: -10, left: 80, transform: 'rotate(4deg)' } }]} />
           </Reveal>
           <Reveal dir="up" delay={0.8}>
-            <SBPolaroid id="wall-8" rotate={-3} top={340} left={960}  label="us, again"  tapes={[{ style: { top: -10, left: 80, transform: 'rotate(-8deg)' } }]} />
+            <SBPolaroid id="wall-8" rotate={-3} top={340} left={960}  src="us%20again.jpeg" label="us, again"  tapes={[{ style: { top: -10, left: 80, transform: 'rotate(-8deg)' } }]} />
           </Reveal>
 
           {/* paw trail through the wall */}
